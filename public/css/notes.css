@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    font-family: 'Arial';
+}
+main {
+    padding: 20px;
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+main section.list-container {
+    margin-right: 5%;
+    width: 35%;
+}
+main section.list-container ul#note_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    padding-right: 20px;
+    max-height: 80vh;
+}
+ul#note_list li {
+    display: flex;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+ul#note_list li div.status-cont{
+    width: 10%;
+    text-align: center;
+}
+ul#note_list li .status-cont > input{
+    margin: 5px 2px;
+}
+ul#note_list li .delete-note img{
+    width: 16px;
+}
+ul#note_list li .note{
+    display: block;
+    width: 85%;
+    text-decoration: none;
+    color: #000;
+    padding: 3px 6px;
+}
+ul#note_list li .note.selected{
+    background-color: #eee;
+}
+ul#note_list li .note.done{
+    text-decoration: line-through;
+}
+ul#note_list li .note .note-title{
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ul#note_list li .note .note-description{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+header h2{
+    text-align:center;
+}
+.btn {
+    background-color: #4BEC68;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 3px;
+    color: #FFF;
+    border: none;
+}
+.btn.create-new {
+    float: right;
+}
+
+section.editor-container {
+    width: 60%;
+}
+.field-container {
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.field-container input[type=text] {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #888;
+    padding: 2px;
+}
+.field-container textarea {
+    width: 95%;
+    box-shadow: 1px 2px 8px #888;
+    border: none;
+    padding: 3%;
+}

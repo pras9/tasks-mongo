@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tasks</title>
+    <link rel="stylesheet" href="css/notes.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Simple Task Manager App</h2>
+    </header>
+    <main>
+      <section class="list-container">
+        <ul id="note_list">
+          <li>
+            Loading ...
+          </li>
+        </ul>
+      </section>
+      <section class="editor-container">
+        <form action="javascript:void(0);" name="note_editor" id="note_editor">
+          <input type="hidden" name="note_id" id="note_id" value="0" />
+          <div class="field-container">
+            <a href="javascript:void(0);" class="btn create-new">Create</a>
+          </div>
+          <div class="field-container">
+            <input
+              type="text"
+              name="note_title"
+              id="note_title"
+              placeholder="<Untitled>"
+            />
+          </div>
+          <div class="field-container">
+            <textarea
+              name="note_description"
+              id="note_description"
+              cols="30"
+              rows="18"
+            ></textarea>
+          </div>
+          <div class="field-container">
+            <input type="checkbox" name="note_done" id="note_done" />
+            <span>Done</span>
+          </div>
+          <div class="field-container">
+            <button type="submit" name="submit" class="btn" id="save_note">
+              Save
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/notes.js"></script>
+  </body>
+</html>
